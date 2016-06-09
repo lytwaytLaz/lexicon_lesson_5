@@ -1,9 +1,6 @@
 package lesson_5_1;
 
-import java.util.HashMap;
-import java.util.ArrayList;
 import java.util.Map;
-import java.util.TreeMap;
 
 /**
  * @author László Hágó
@@ -12,10 +9,10 @@ import java.util.TreeMap;
  */
 public class Quiz {
     private String question;
-    private ArrayList<String> choices;
+    private Map<String, String> choices;
     private String correct;
 
-    public Quiz(String question, ArrayList<String> choices, String correct) {
+    public Quiz(String question, Map<String, String> choices, String correct) {
         this.question = question;
         this.choices = choices;
         this.correct = correct;
@@ -25,12 +22,18 @@ public class Quiz {
         return question;
     }
 
-    public ArrayList<String> getChoices() {
+    public Map<String, String> getChoices() {
         return choices;
     }
 
     public String getCorrect() {
         return correct;
+    }
+
+    @Override
+    public  String toString()
+    {
+        return getQuestion() + "\n" + getChoices().toString();
     }
 
 }
