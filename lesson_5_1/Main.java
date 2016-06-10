@@ -30,7 +30,7 @@ public class Main {
         choices2.put("A ", " Java is a peace of cake");
         choices2.put("B ", " Java is very easy to learn");
         choices2.put("C ", " Java is a walk in the park");
-        choices2.put("D ", " Java is like climbing Mount Everest");
+        choices2.put("D ", " Java knows this: there is no hurry. We shall get there someday");
 
         Map<String, String> choices3 = new TreeMap<>();
         choices3.put("A ", " Not to Java");
